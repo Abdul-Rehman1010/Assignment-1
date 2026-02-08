@@ -103,6 +103,37 @@ ul {
     font-size: 0.8rem;
 }
 
+.download-btn {
+    background-color: RoyalBlue;
+    color: White;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    background-color: DodgerBlue;
+}
+
+@media print {
+    .download-btn {
+        display: none;
+    }
+    body {
+        background-color: White;
+    }
+    .container {
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+    }
+}
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
