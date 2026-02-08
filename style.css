@@ -76,6 +76,11 @@ p, li {
     margin-bottom: 10px;
 }
 
+.description p{
+    color: gray;
+    font-style: italic;
+}
+
 ul {
     list-style-type: none;
 }
@@ -105,5 +110,43 @@ ul {
     }
     .left-column, .right-column {
         width: 100%;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: Black;
+        color: White;
+    }
+
+    .container {
+        background: Black;
+        box-shadow: none;
+    }
+
+    .left-column {
+        background: #36454F;
+    }
+
+    .right-column {
+        background-color: Black;
+        color: White;
+    }
+
+    h3 {
+        color: White;
+        border-bottom: 2px solid DeepSkyBlue;
+    }
+
+    h2 {
+        color: LightGray;
+    }
+
+    .description p{
+        color: lightslategray
+    }
+
+    .footer{
+        background: #36454F;
     }
 }
