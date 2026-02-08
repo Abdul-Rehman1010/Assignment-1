@@ -1,3 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: WhiteSmoke;
+    color: Black;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: White;
+    box-shadow: 0 0 20px LightGray;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-column {
+    background-color: DarkSlateGray;
+    color: White;
+    flex: 1;
+    min-width: 250px;
+    padding: 30px;
+    text-align: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid WhiteSmoke;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.right-column {
+    background-color: White;
+    flex: 2;
+    padding: 40px;
+}
+
 h1 {
-    color: blue;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: Silver;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+h3 {
+    color: DarkSlateGray;
+    border-bottom: 2px solid DodgerBlue;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.left-column h3 {
+    color: White;
+    border-bottom: 1px solid Gray;
+    font-size: 1.1rem;
+}
+
+p, li {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.skill-tag {
+    background: SlateGray;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 2px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.footer {
+    width: 100%;
+    background: DarkSlateGray;
+    color: White;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin: 0;
+    }
+    .left-column, .right-column {
+        width: 100%;
+    }
 }
