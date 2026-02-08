@@ -12,8 +12,8 @@ body {
 }
 
 .container {
-    max-width: 1000px;
-    margin: 40px auto;
+    max-width: 2000px;
+    margin: auto; 
     background: White;
     box-shadow: 0 0 20px LightGray;
     display: flex;
@@ -24,8 +24,8 @@ body {
     background-color: DarkSlateGray;
     color: White;
     flex: 1;
-    min-width: 250px;
-    padding: 30px;
+    min-width: 200px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -41,7 +41,7 @@ body {
 .right-column {
     background-color: White;
     flex: 2;
-    padding: 40px;
+    padding: 25px;
 }
 
 h1 {
