@@ -29,6 +29,9 @@ body {
     min-width: 200px;
     padding: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .profile-img {
@@ -116,17 +119,21 @@ ul {
     width: 100%;
     font-size: 1rem;
     font-weight: bold;
+
+    margin-top: auto;
 }
 
 .download-btn:hover {
     background-color: DodgerBlue;
 }
 
+/*Animation*/
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
+/*Download Button*/
 @media print {
     .download-btn {
         display: none;
@@ -151,6 +158,7 @@ ul {
     }
 }
 
+/*Dark Mode*/
 @media (prefers-color-scheme: dark) {
     body {
         background-color: Black;
